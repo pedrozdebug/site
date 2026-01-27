@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+:root {
+    --bg: #0b1020;
+    --bg-dark: #070b16;
+    --blue: #3b82f6;
+    --blue-hover: #60a5fa;
+    --text: #e5e7eb;
+}
+
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+
+.header {
+    background-color: var(--bg-dark);
+    border-bottom: 2px solid var(--blue);
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo img {
+    width: 40px;
+    image-rendering: pixelated;
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.nav-link:hover {
+    color: var(--blue-hover);
+}
+
+
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.hero h1 {
+    font-size: 18px;
+    color: var(--blue);
+}
+
+.hero span {
+    font-size: 60px;
+    color: var(--blue);
+}
+
+.hero h3 {
+    font-size: 12px;
+    color: var(--blue);
+}
+
+.hero input {
+    width: 1200px;
+    padding: 14px;
+    background-color: #070b16;
+    border: 2px solid #3b82f6;
+    color: #e5e7eb;
+    font-size: 10.15px;
+    outline: none;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    color: var(--text);
+    padding: 14px 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--blue);
+    color: #000;
+}
+
+
+.btn-link {
+    text-decoration: none;
+}
+
+
+/* === LOADSTRING GENERATOR ONLY === */
+
+.loadstring-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* input da URL */
+#loadstring-input {
+  width: 520px;
+  padding: 12px;
+  background-color: var(--bg-dark);
+  border: 2px solid var(--blue);
+  color: var(--text);
+  font-size: 10px;
+  outline: none;
+}
+
+#loadstring-input::placeholder {
+  color: rgba(229, 231, 235, 0.6);
+}
+
+#loadstring-input:focus {
+  border-color: var(--blue-hover);
+}
+
+/* botão gerar */
+.loadstring-box .btn {
+  padding: 12px 16px;
+  height: auto;
+}
+
+/* resultado */
+#loadstring-result {
+  display: block;
+  margin-top: 14px;
+  width: 520px;
+  padding: 12px;
+  background-color: var(--bg-dark);
+  border: 2px solid var(--blue);
+  color: var(--text);
+  font-size: 10px;
+  outline: none;
+}
+
+#loadstring-result::placeholder {
+  color: rgba(229, 231, 235, 0.6);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .loadstring-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #loadstring-input,
+  #loadstring-result,
+  .loadstring-box .btn {
+    width: 100%;
+  }
+}

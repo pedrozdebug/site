@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedsxz</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- NAV BAR -->
+<header class="header">
+  <div class="header-container">
+
+    <div class="logo">
+      <a href="index.html"><img src="assets/icon.png" alt="icon"></a>
+    </div>
+
+    <nav class="nav">
+      <a href="script.html" class="nav-link">Pdzhub</a>
+      <a href="executor.html" class="nav-link">Executor</a>
+      <a href="scripts.html" class="nav-link">Scripts</a>
+      <a href="loadstring.html" class="nav-link">LoadstrinGen</a>
+      <a href="https://github.com/pedrozdebug" target="_blank" class="nav-link">GitHub</a>
+    </nav>
+
+  </div>
+</header>
+
+<hr>
+
+<!-- LOADSTRING GENERATOR -->
+<form id="loadstring-form" class="loadstring-box">
+  <input
+    type="text"
+    id="loadstring-input"
+    placeholder="https://placeholderman.com/script.lua"
+  >
+  <button type="submit" class="btn">Gerar</button>
+</form>
+
+<input
+  type="text"
+  id="loadstring-result"
+  readonly
+  placeholder="Loadstring..."
+  onclick="this.select()"
+>
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
